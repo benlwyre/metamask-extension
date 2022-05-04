@@ -971,6 +971,20 @@ export function removeSnap(snap) {
 export async function removeSnapError(msgData) {
   return promisifiedBackground.removeSnapError(msgData);
 }
+
+export function dismissNotifications(ids) {
+  return async (dispatch) => {
+    const newState = await promisifiedBackground.dismissNotifications(ids);
+    dispatch(updateMetamaskState(newState));
+  };
+}
+
+export function markNotificationsAsRead(ids) {
+  return async (dispatch) => {
+    const newState = await promisifiedBackground.markNotificationsAsRead(ids);
+    dispatch(updateMetamaskState(newState));
+  };
+}
 ///: END:ONLY_INCLUDE_IN
 
 export function cancelMsg(msgData) {

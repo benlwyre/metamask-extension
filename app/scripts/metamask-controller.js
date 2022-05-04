@@ -1756,6 +1756,8 @@ export default class MetamaskController extends EventEmitter {
       disableSnap: this.snapController.disableSnap.bind(this.snapController),
       enableSnap: this.snapController.enableSnap.bind(this.snapController),
       removeSnap: this.removeSnap.bind(this),
+      dismissNotifications: this.dismissNotifications.bind(this),
+      markNotificationsAsRead: this.markNotificationsAsRead.bind(this),
       ///: END:ONLY_INCLUDE_IN
 
       // swaps
@@ -4162,6 +4164,24 @@ export default class MetamaskController extends EventEmitter {
     this.permissionController.revokePermissionForAllSubjects(
       snap.permissionName,
     );
+  }
+
+  /**
+   * Deletes the specified notifications from state.
+   *
+   * @param {string[]} ids - The notifications ids to delete.
+   */
+  dismissNotifications(ids) {
+    this.notificationController.dismiss(ids);
+  }
+
+  /**
+   * Updates the readDate attribute of the specified notifications.
+   *
+   * @param {string[]} ids - The notifications ids to mark as read.
+   */
+  markNotificationsAsRead(ids) {
+    this.notificationController.markRead(ids);
   }
   ///: END:ONLY_INCLUDE_IN
 }
