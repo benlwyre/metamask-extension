@@ -13,7 +13,11 @@ import {
   updateRecipient,
   updateRecipientUserInput,
 } from '../../ducks/send';
-import { getCurrentChainId, isCustomPriceExcessive } from '../../selectors';
+import {
+  getCurrentChainId,
+  isCustomPriceExcessive,
+  getRecipientEnsName,
+} from '../../selectors';
 import { getSendHexDataFeatureFlagState } from '../../ducks/metamask/metamask';
 import { showQrScanner } from '../../store/actions';
 import { MetaMetricsContext } from '../../contexts/metametrics';
@@ -36,6 +40,7 @@ export default function SendTransactionScreen() {
     getIsUsingMyAccountForRecipientSearch,
   );
   const recipient = useSelector(getRecipient);
+  const recipientEnsName = useSelector(getRecipientEnsName);
   const showHexData = useSelector(getSendHexDataFeatureFlagState);
   const userInput = useSelector(getRecipientUserInput);
   const location = useLocation();
@@ -100,7 +105,7 @@ export default function SendTransactionScreen() {
         }
         internalSearch={isUsingMyAccountsForRecipientSearch}
         selectedAddress={recipient.address}
-        selectedName={recipient.nickname}
+        selectedName={recipient.nickname || recipientEnsName}
         onPaste={(text) => updateRecipient({ address: text, nickname: '' })}
         onReset={() => dispatch(resetRecipientInput())}
         scanQrCode={() => {
