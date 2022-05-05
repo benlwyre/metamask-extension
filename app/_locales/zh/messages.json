@@ -62,6 +62,13 @@
     "message": "$1可以访问并使用此资产",
     "description": "$1 is the url of the site requesting ability to spend"
   },
+  "accessYourWalletWithSRP": {
+    "message": "使用账户助记词访问钱包"
+  },
+  "accessYourWalletWithSRPDescription": {
+    "message": "MetaMask无法恢复您的密码。我们将使用您的助记词来验证您的所有权、恢复您的钱包并设置新密码。首先，请输入创建钱包时获得的助记词。$1",
+    "description": "$1 is the words 'Learn More' from key 'learnMore', separated here so that it can be added as a link"
+  },
   "accessingYourCamera": {
     "message": "正在访问您的相机……"
   },
@@ -152,6 +159,10 @@
   },
   "addNetwork": {
     "message": "添加网络"
+  },
+  "addNetworkTooltipWarning": {
+    "message": "此网络连接依赖于第三方。此连接可能不太可靠，或使第三方可进行活动跟踪。$1",
+    "description": "$1 is Learn more link"
   },
   "addSuggestedTokens": {
     "message": "添加推荐代币"
@@ -727,9 +738,6 @@
   "customGasSubTitle": {
     "message": "提升费用可能会缩短处理时间，但不能保证。"
   },
-  "customNetworks": {
-    "message": "自定义网络"
-  },
   "customSpendLimit": {
     "message": "自定义消费限额"
   },
@@ -1241,6 +1249,10 @@
     "message": "所有Flask API都是实验性的。它们可能会在未事先通知的情况下被更改或删除，它们也可能会无限期地留在Flask上而不会迁移到稳定的MetaMask。您需要自行承担使用它们的风险。",
     "description": "This message warns developers about unstable Flask APIs"
   },
+  "flaskWelcomeWarning4": {
+    "message": "确保在使用Flask时禁用常规MetaMask扩展程序。",
+    "description": "This message calls to pay attention about multiple versions of MetaMask running on the same site (Flask + Prod)"
+  },
   "flaskWelcomeWarningAcceptButton": {
     "message": "我接受风险",
     "description": "this text is shown on a button, which the user presses to confirm they understand the risks of using Flask"
@@ -1431,6 +1443,9 @@
   },
   "hide": {
     "message": "隐藏"
+  },
+  "hideFullTransactionDetails": {
+    "message": "隐藏完整的交易细节"
   },
   "hideSeedPhrase": {
     "message": "隐藏助记词"
@@ -1703,6 +1718,9 @@
   },
   "levelArrow": {
     "message": "水平箭头"
+  },
+  "lightTheme": {
+    "message": "浅色"
   },
   "likeToImportTokens": {
     "message": "您想导入这些代币吗？"
@@ -2298,9 +2316,6 @@
   "onlyConnectTrust": {
     "message": "只连接您信任的网站。"
   },
-  "onlyInteractWith": {
-    "message": "仅与您信任的实体互动。"
-  },
   "openFullScreenForLedgerWebHid": {
     "message": "全屏打开 MetaMask 以通过 WebHID 连接您的 ledger。",
     "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
@@ -2319,6 +2334,12 @@
   },
   "origin": {
     "message": "来源"
+  },
+  "osTheme": {
+    "message": "系统"
+  },
+  "padlock": {
+    "message": "挂锁"
   },
   "parameters": {
     "message": "参数"
@@ -2418,6 +2439,9 @@
   "plusXMore": {
     "message": "另外 $1 项",
     "description": "$1 is a number of additional but unshown items in a list- this message will be shown in place of those items"
+  },
+  "popularCustomNetworks": {
+    "message": "流行自定义网络"
   },
   "preferredLedgerConnectionType": {
     "message": "首选 Ledger 连接类型",
@@ -3760,6 +3784,9 @@
   "typePassword": {
     "message": "输入您的 MetaMask 密码"
   },
+  "typeYourSRP": {
+    "message": "输入助记词"
+  },
   "u2f": {
     "message": "U2F",
     "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
@@ -3918,6 +3945,9 @@
   },
   "walletCreationSuccessTitle": {
     "message": "钱包创建成功"
+  },
+  "warning": {
+    "message": "警告"
   },
   "weak": {
     "message": "弱"

@@ -62,6 +62,13 @@
     "message": "$1 एक्सेस कर सकता है और इस एसेट को खर्च कर सकता है",
     "description": "$1 is the url of the site requesting ability to spend"
   },
+  "accessYourWalletWithSRP": {
+    "message": "अपने गुप्त रिकवरी वाक्यांश का इस्तेमाल कर अपने वॉलेट तक पहुंच प्राप्त करें"
+  },
+  "accessYourWalletWithSRPDescription": {
+    "message": "मेटामास्क आपका पासवर्ड रिकवर नहीं कर सकता। हम आपके स्वामित्व को मान्य करने, आपके वॉलेट को रीस्टोर करने और एक नया पासवर्ड सेट करने के लिए आपके गुप्त रिकवरी वाक्यांश का उपयोग करेंगे। सबसे पहले, अपना वह गुप्त रिकवरी वाक्यांश दर्ज करें जिसे आपको अपना बटुआ बनाते समय दिया गया था। $1",
+    "description": "$1 is the words 'Learn More' from key 'learnMore', separated here so that it can be added as a link"
+  },
   "accessingYourCamera": {
     "message": "आपके कैमरे तक पहुँच रहा है..."
   },
@@ -2314,6 +2321,9 @@
   "origin": {
     "message": "उत्पत्ति"
   },
+  "padlock": {
+    "message": "पैडलॉक"
+  },
   "parameters": {
     "message": "पैरामीटर"
   },
@@ -3753,6 +3763,9 @@
   },
   "typePassword": {
     "message": "अपना MetaMask पासवर्ड टाइप करें"
+  },
+  "typeYourSRP": {
+    "message": "अपना गुप्त रिकवरी वाक्यांश लिखें"
   },
   "u2f": {
     "message": "U2F",

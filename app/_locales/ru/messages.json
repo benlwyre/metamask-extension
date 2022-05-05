@@ -62,6 +62,13 @@
     "message": "$1 может получить доступ к этому активу и потратить его",
     "description": "$1 is the url of the site requesting ability to spend"
   },
+  "accessYourWalletWithSRP": {
+    "message": "Получайте доступ к кошельку с помощью секретной фразы для восстановления"
+  },
+  "accessYourWalletWithSRPDescription": {
+    "message": "MetaMask не может восстановить ваш пароль. Мы используем вашу cекретную фразу для восстановления, чтобы подтвердить ваше право собственности, восстановить ваш кошелек и установить новый пароль. Сначала введите секретную фразу для восстановления, которую вы получили при создании кошелька. $1",
+    "description": "$1 is the words 'Learn More' from key 'learnMore', separated here so that it can be added as a link"
+  },
   "accessingYourCamera": {
     "message": "Доступ к камере..."
   },
@@ -152,6 +159,10 @@
   },
   "addNetwork": {
     "message": "Добавить сеть"
+  },
+  "addNetworkTooltipWarning": {
+    "message": "Это сетевое подключение зависит от третьих сторон. Оно может быть менее надежным или позволять третьим лицам отслеживать активность. $1",
+    "description": "$1 is Learn more link"
   },
   "addSuggestedTokens": {
     "message": "Добавить рекомендованные токены"
@@ -1238,6 +1249,10 @@
     "message": "Все API Flask являются экспериментальными. Они могут быть изменены или удалены без предварительного уведомления или могут оставаться во Flask на неопределенный срок без переноса в стабильную версию MetaMask. Используйте их на свой страх и риск.",
     "description": "This message warns developers about unstable Flask APIs"
   },
+  "flaskWelcomeWarning4": {
+    "message": "Обязательно отключите свое обычное расширение MetaMask при использовании Flask.",
+    "description": "This message calls to pay attention about multiple versions of MetaMask running on the same site (Flask + Prod)"
+  },
   "flaskWelcomeWarningAcceptButton": {
     "message": "Я принимаю риски",
     "description": "this text is shown on a button, which the user presses to confirm they understand the risks of using Flask"
@@ -1428,6 +1443,9 @@
   },
   "hide": {
     "message": "Скрыть"
+  },
+  "hideFullTransactionDetails": {
+    "message": "Скрыть полную информацию о транзакции"
   },
   "hideSeedPhrase": {
     "message": "Скрыть сид-фразу"
@@ -1700,6 +1718,9 @@
   },
   "levelArrow": {
     "message": "стрелка «уровень»"
+  },
+  "lightTheme": {
+    "message": "Светлая"
   },
   "likeToImportTokens": {
     "message": "Вы хотели бы импортировать эти токены?"
@@ -2314,6 +2335,12 @@
   "origin": {
     "message": "Источник"
   },
+  "osTheme": {
+    "message": "Системная"
+  },
+  "padlock": {
+    "message": "Замок"
+  },
   "parameters": {
     "message": "Параметры"
   },
@@ -2412,6 +2439,9 @@
   "plusXMore": {
     "message": "+ еще $1",
     "description": "$1 is a number of additional but unshown items in a list- this message will be shown in place of those items"
+  },
+  "popularCustomNetworks": {
+    "message": "Популярные пользовательские сети"
   },
   "preferredLedgerConnectionType": {
     "message": "Предпочтительный тип подключения к леджеру",
@@ -3754,6 +3784,9 @@
   "typePassword": {
     "message": "Введите свой пароль MetaMask"
   },
+  "typeYourSRP": {
+    "message": "Введите секретную фразу для восстановления"
+  },
   "u2f": {
     "message": "U2F:",
     "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
@@ -3912,6 +3945,9 @@
   },
   "walletCreationSuccessTitle": {
     "message": "Кошелек создан"
+  },
+  "warning": {
+    "message": "Предупреждение"
   },
   "weak": {
     "message": "Слабый"
